@@ -1,0 +1,73 @@
+  .subheader {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.ele2, .ele3 {
+    margin-left: 50px;
+}
+
+ h3{
+    color: red;
+}
+
+ .list-form-elements
+ {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ .select-type, .contact-phone, .birthday
+ {
+    margin-top: 30px;
+ }
+
+ .contact-name {
+    margin-top: 10px;
+ }
+
+ .list-elem
+ {
+    
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .btn-create {
+    color: #fff;
+    background-color: #2938bd;
+    border-color: #2938bd;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .list-principal{
+   display: flex;
+   list-style: none;    
+  }
+
+  .left-panel{
+     margin-left: 150px;
+     margin-right: 100px;
+  }
+
+  .right-panel{
+   margin-right: 200px;
+   margin-left: 100px;
+}
+
+.client-select {
+   margin-top: 18px;
+   width: auto;
+}
+
+.place, .selectName {
+   margin-top: 30px;
+}
