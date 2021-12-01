@@ -1,7 +1,93 @@
-<h1>Counter</h1>
+<ul class="subheader">
+    <li class="ele1">
+      <h3>Create Reservation</h3>
+    </li>
+    <li class="ele2">  <p> Lorem ipsum sit armet, consectetur adipiscing elit, sed do <br>
+                           eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </li>  
+  </ul>
 
-<p>This is a simple example of an Angular component.</p>
+  <ul class="list-principal">
+  <li class="left-panel">
+    
+  <div class="ele-parent">
+  <div class="list-elem">
+  <ul class="list-form-elements">
 
-<p aria-live="polite">Current count: <strong>{{ currentCount }}</strong></p>
+    <li>      
+     <h5> Create Contact Area </h5>
+    </li>
 
-<button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
+    <li>
+     <input type="text" class="contact-name" placeholder="Contact Name..." [(ngModel)]='name'/> 
+   </li>
+
+   <li class="select-type">
+    <SELECT name="selectType" ngDefaultControl [(ngModel)]="opcionSeleccionado" (change)="capturar()">
+        <OPTION Value="0">Contact Type</OPTION>
+        <OPTION Value="1">Type 1</OPTION>
+        <OPTION Value="2">Type 2</OPTION>
+        <OPTION Value="3">Type 3</OPTION>
+        <OPTION Value="4">Type 4</OPTION>
+    </SELECT>
+   </li>
+
+   <li>
+    <input type="text" class="contact-phone" placeholder="Phone number..." [(ngModel)]='phone'/> 
+  </li>
+
+  <li>
+  <input type="date" class="birthday" name="birthday" [(ngModel)]='birthdate'>
+  </li>
+
+  <li>
+    <button class="btn btn-create" (click)="addContact()"> Create Contact </button>
+  </li>
+
+  </ul>
+</div>
+</div>
+
+ </li>
+ <li class="right-panel"> 
+ 
+<div class="ele-parent">
+  <div class="list-elem">
+  <ul class="list-form-elements">
+
+    <li>
+      <h5> Create Reservation Area </h5>
+    </li>
+
+   <li class="client-select">
+    <SELECT name="selectName" ngDefaultControl [(ngModel)]="contactIdSelect" (change)="selectId()">
+        <OPTION Value="0">Select Client</OPTION>
+        <option *ngFor="let dato of contacts">
+          {{dato.name}}
+        </option>
+    </SELECT>
+   </li>
+
+   <li>
+    <input type="text" class="place" placeholder="Place of Reservation" [(ngModel)]='place'/> 
+  </li>
+
+   <li>
+    <input type="text" class="contact-phone" placeholder="Rank 1,2 or 5 Stars" [(ngModel)]='rank'/> 
+  </li>
+
+  <li>
+  <input type="date" class="birthday" name="birthday" [(ngModel)]='date'>
+  </li>
+
+  <li>
+    <button class="btn btn-create" (click)="createReservation()"> Create Reservation </button>
+  </li>
+
+  </ul>
+</div>
+</div>
+
+</li>
+</ul>
+

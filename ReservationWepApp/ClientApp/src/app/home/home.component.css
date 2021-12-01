@@ -1,0 +1,36 @@
+  .subheader {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+   .ele2, .ele3 {
+
+    margin-left: 50px;
+}
+
+ h3{
+    color: red;
+}
+
+ .btn-edit {
+    color: #fff;
+    background-color: #1bc245;
+    border-color: #1bc245;
+    width: 100px;
+  }
+
+  .btn-createlink { 
+    background-color: #000;
+    border-color: #000;
+    width: auto;
+    height: auto;
+  }
+
+  .nav-link 
+  {
+    color: #fff;
+  }
+  
+
